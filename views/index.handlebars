@@ -1,0 +1,61 @@
+<div id="title">
+
+<h1>DumBurger!</h1>
+
+<h2>Create the burger of your dreams!</h2>
+</div>
+
+<div id="created">
+<h3>*Drool*</h3>
+
+
+
+<ul class="list-group">
+	{{#each burgers}}
+	{{#unless this.devoured}}
+	<li class="list-group-item">
+		<div class="input-group">
+			<p> {{this.burger_name}} </p>
+			<img src="../assets/images/burger.jpg" alt="picture of a burger" style="max-width: 50px; max-height:50px;">
+			<form>
+				<input class='burger_id' type="hidden" name="devoured" value="{{this.id}}">
+				<button class="btn" type="submit">OM NOM NOM!</button>
+			</form>
+		</div>
+	</li>
+	{{/unless}}
+	{{/each}}
+</ul>
+</div>
+
+<div id="add">
+<h2>Add a Burger</h2>
+<p>Go on... you know you want to... </br>describe this burger like no vegetarian is watching... </br>or maybe like they ARE watching...</br> whichever you prefer... </br>I won't judge...</p>
+<form class="create-form">
+
+	<div class="form-group">
+		<textarea type="text" id="bur" name="b_name"></textarea>
+	</div>
+
+
+	<button type="submit" id="subBtn">Add a Burger</button>
+</form>
+</div>
+
+		<div  id="devoured">
+		<h3 id="heaven">I wish I had another one:</h3>
+			<div>
+				<ul>
+				{{#each burgers}}
+					{{#if this.devoured}}
+					<li>
+						<p class="lead">{{this.burger_name}} </p>
+					</li>
+					{{/if}}
+				{{/each}}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
