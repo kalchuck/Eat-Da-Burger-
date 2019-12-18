@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(153, 153, 207);
+}
+#title {
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(197, 245, 26);
+    margin-right: 655px;
+    margin-left: 346px;
+    text-align: center;
+}
+#created {
+    padding-left:100px;
+    padding-right:50px;
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(22, 139, 235);
+    float: left;
+}
+#add{
+    padding-left:100px;
+    padding-right:85px;
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(224, 15, 113);
+    float:left;
+ 
+    text-align: center;
+}
+#devoured{
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:25px;
+    padding-bottom: 25px;
+    background-color: rgb(30, 245, 120);
+    float: left;
+}
