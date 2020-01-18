@@ -5,6 +5,7 @@ const path = require("path");
 const router = express.Router();
 
 router.get("/", function(req, res) {
+  console.log("route / hit");
   burger.selectAll(function(data) {
     var hbsObject = {
       burgers: data
