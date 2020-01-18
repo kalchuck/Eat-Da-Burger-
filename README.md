@@ -14,3 +14,5 @@ Libraries, Technologies, and Modules used
 This app uses the following external technologies, modules, and libraries: JQuery, DOTENV, express, express-handlebars, mysql, JAWSdb.
 
 Deployed Link
+
+Heroku deployed - https://sleepy-anchorage-86463.herokuapp.com/
